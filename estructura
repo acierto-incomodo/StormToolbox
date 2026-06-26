@@ -1,0 +1,8 @@
+stormtoolbox/
+├── main.js
+├── preload.js
+├── package.json
+├── renderer/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
