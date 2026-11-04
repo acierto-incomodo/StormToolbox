@@ -1,0 +1,39 @@
+{
+  "name": "stormtoolbox",
+  "version": "1.0.0",
+  "description": "StormToolbox - gestor de sistema",
+  "main": "main.js",
+  "author": "Aitor",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish always"
+  },
+  "dependencies": {
+    "electron-log": "^5.4.4",
+    "electron-updater": "^6.8.11"
+  },
+  "devDependencies": {
+    "electron": "^45.2.2",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.stormgamesstudios.stormtoolbox",
+    "productName": "StormToolbox",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "TU_USUARIO",
+        "repo": "stormtoolbox"
+      }
+    ]
+  }
+}

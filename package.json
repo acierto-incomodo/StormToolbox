@@ -1,38 +1,19 @@
 {
   "name": "stormtoolbox",
   "version": "1.0.0",
-  "description": "StormToolbox - gestor de sistema",
-  "main": "main.js",
-  "author": "Aitor",
-  "license": "MIT",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder",
-    "dist": "electron-builder --publish always"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "electron-updater": "^6.8.9"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acierto-incomodo/StormToolbox.git"
   },
-  "devDependencies": {
-    "electron": "^42.5.0",
-    "electron-builder": "^26.15.3"
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/acierto-incomodo/StormToolbox/issues"
   },
-  "build": {
-    "appId": "com.stormgamesstudios.stormtoolbox",
-    "productName": "StormToolbox",
-    "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ],
-      "category": "Utility"
-    },
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "TU_USUARIO",
-        "repo": "stormtoolbox"
-      }
-    ]
-  }
+  "homepage": "https://github.com/acierto-incomodo/StormToolbox#readme"
 }
