@@ -1,16 +1,35 @@
 {
   "name": "calendario",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "StormToolbox - Calendario",
+  "main": "main.js",
+  "author": "Aitor",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish always"
   },
-  "keywords": [],
-  "type": "commonjs",
-  "devDependencies": {
-    "electron": "^45.2.2",
-    "electron-builder": "^26.18.0"
+  "build": {
+    "appId": "com.stormgamesstudios.stormtoolbox.calendario",
+    "productName": "StormToolbox - Calendario",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "acierto-incomodo",
+        "repo": "stormtoolbox"
+      }
+    ]
   },
   "dependencies": {
     "electron-log": "^5.4.4",
