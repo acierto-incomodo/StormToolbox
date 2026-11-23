@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/acierto-incomodo/StormToolbox#readme",
   "devDependencies": {
-    "electron": "^45.2.2",
+    "electron": "^45.4.1",
     "electron-builder": "^26.18.0"
   }
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "StormToolbox - Calendario",
   "main": "main.js",
-  "author": "Aitor",
+  "author": "StormGamesStudios <meliodas.aitor@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
